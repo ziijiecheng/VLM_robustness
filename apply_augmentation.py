@@ -169,6 +169,7 @@ def stitch_images(image_paths, output_path, max_cols=8):
     stitched_image.save(output_path)
 
 def process_dataset(dataset_path, output_path):
+    #OCT artifacts
     augmentation_strengths = {
     'weak': {
         'Noise': tio.RandomNoise(mean=0, std=0.10),
@@ -181,10 +182,47 @@ def process_dataset(dataset_path, output_path):
         'Noise': tio.RandomNoise(mean=0, std=0.35),
         'Motion': tio.RandomMotion(degrees=160, translation=120, num_transforms=32),
         'BiasField': tio.RandomBiasField(coefficients=1.8),
-        'Crop': RandomCrop(0.4),  # 20% of original size
+        'Crop': RandomCrop(0.4),  # 40% of original size
         'Rotate': FixedRotation(angle=90)
     },
 }
+    """
+    #MRI artifacts
+    augmentation_strengths = {
+    'weak': {
+        'Noise': tio.RandomNoise(mean=0, std=0.15),
+        'Motion': tio.RandomMotion(degrees=30, translation=30, num_transforms=8),
+        'BiasField': tio.RandomBiasField(coefficients=0.7),
+        'Crop': RandomCrop(0.8),  # 80% of original size
+        'Rotate': FixedRotation(angle=30)
+    },
+    'strong': {
+        'Noise': tio.RandomNoise(mean=0, std=0.4),
+        'Motion': tio.RandomMotion(degrees=120, translation=100, num_transforms=24),
+        'BiasField': tio.RandomBiasField(coefficients=1.8),
+        'Crop': RandomCrop(0.4),  # 40% of original size
+        'Rotate': FixedRotation(angle=90)
+    },
+}
+    #X-rays artifacts
+    augmentation_strengths = {
+    'weak': {
+        'Noise': tio.RandomNoise(mean=0, std=0.15),
+        'Motion': tio.RandomMotion(degrees=30, translation=15, num_transforms=8),
+        'BiasField': tio.RandomBiasField(coefficients=0.7),
+        'Crop': RandomCrop(0.8),  # 80% of original size
+        'Rotate': FixedRotation(angle=30)
+    },
+    'strong': {
+        'Noise': tio.RandomNoise(mean=0, std=0.4),
+        'Motion': tio.RandomMotion(degrees=120, translation=80, num_transforms=16),
+        'BiasField': tio.RandomBiasField(coefficients=1.5),
+        'Crop': RandomCrop(0.4),  # 40% of original size
+        'Rotate': FixedRotation(angle=90)
+    },
+}
+    """
+    
 
     valid_image_extensions = {'.png', '.jpg', '.jpeg', '.bmp', '.tiff'}
     
@@ -227,7 +265,7 @@ def process_dataset(dataset_path, output_path):
             stitch_images(augmented_images[level][aug_type], stitched_path)
 
 # Example usage
-dataset_path = '/Users/a86153/Desktop/vlm/brain tumor classification'  # Replace with your dataset path
-output_path = '/Users/a86153/Desktop/vlm/brain tumor classification augmented'  # Replace with your output path
+dataset_path = ''  # Replace with your dataset path
+output_path = ''  # Replace with your output path
 
 process_dataset(dataset_path, output_path)

@@ -37,11 +37,11 @@ def load_api_key(model_type):
     """Load API key based on the model type."""
     
     if model_type == 'chatgpt':
-        return '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'
+        return '' #API key
     elif model_type == 'claude':
-        return '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'
+        return '' #API key
     elif model_type == 'gemini':
-        return 'AIzaSyC9coNffUwWQNQNE9zxn-uJlsuwv9_H4gU'
+        return '' #API key
     elif model_type in ['biomedclip', 'minicpm', 'llama']:
         return None  # BiomedCLIP and MiniCPM don't require an API key
     else:

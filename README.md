@@ -4,4 +4,4 @@ The Project pipeline about how we build the benchmarks in Figure A and how we ev
 
 A:
 You can add artefacts to a single image following:
-[Open in Google Colab](https://colab.research.google.com/drive/1rBm0_9MTL1rApvtit55p7PDQ2yUVAoGk#scrollTo=EhWRhxpbh7bK)
+[Open in Google Colab](https://drive.google.com/file/d/1YA-B6Gfr_0SHMUparaUX9FL9p_BugTT6/view?usp=sharing)

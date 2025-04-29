@@ -16,11 +16,11 @@ Please contact: rmapzch@ucl.ac.uk if you have any questions.
 
 ## 🧪 Evaluate VLMs' Robustness on Other Medical Fields
 
-  1.Build original unaltered images dataset in structure:
+1.Build original unaltered images dataset in structure:
  original_unaltered_images/
 ├── normal/
 └── diseased/
-	2.Introducing image artefacts following `imaging_artefacts.ipynb` to your original unaltered images to construct benchmarks in strucuture:
+2.Introducing image artefacts following `imaging_artefacts.ipynb` to your original unaltered images to construct benchmarks in strucuture:
  dataset/
 ├── weak_artifacts/
 │   ├── bias_field/
@@ -55,6 +55,6 @@ Please contact: rmapzch@ucl.ac.uk if you have any questions.
         ├── normal/
         └── diseased/
   
-	3. Evaluated VLMs' performance at each artefacts.
+3. Evaluated VLMs' performance at each artefacts.
 
 

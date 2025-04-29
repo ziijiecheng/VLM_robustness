@@ -24,8 +24,8 @@ original_unaltered_images/
 ```
 2.Introducing image artefacts following `imaging_artefacts.ipynb` to your original unaltered images to construct benchmarks in strucuture:
 ```
-dataset/
-├── weak_artifacts/
+Benchmark/
+├── weak_artefacts/
 │   ├── bias_field/
 │   │   ├── normal/
 │   │   └── diseased/
@@ -41,7 +41,7 @@ dataset/
 │   └── cropping/
 │       ├── normal/
 │       └── diseased/
-└── strong_artifacts/
+└── strong_artefacts/
     ├── bias_field/
     │   ├── normal/
     │   └── diseased/

@@ -1,4 +1,4 @@
-# VLM robustness to medical imaging artefacts
+# Understanding the robustness of vision-language models to medical image artefacts
 The project consists of two core components. The first involves constructing benchmarks with varying levels of imaging artefacts. The second focuses on obtaining responses from VLMs using distorted images and different prompts. By analyzing these responses, we can evaluate the robustness of VLMs to imaging artefacts.
 
 The code for the first component is available in `imaging_artefacts.ipynb`. It allows you to apply intensity artefacts—including random noise, bias fields, and motion—to original, unaltered images. We implemented it using [torchio](https://github.com/TorchIO-project/torchio) as a reference. You can also apply spatial artefacts such as random cropping and rotation.

@@ -59,6 +59,6 @@ Benchmark/
         └── diseased/
 ``` 
   
-3. Evaluated VLMs' performance at each artefacts.
+3. Evaluated VLMs' performance in detecting lesions from images with various srtefacts, as outlined in `VLMs_evaluation.ipynb`.
 
 

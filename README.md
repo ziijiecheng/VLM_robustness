@@ -7,7 +7,7 @@ You can apply medical image artefacts: [![Open in Colab](https://colab.research.
 
 The second focuses on applying VLMs in disease detection tasks. It utilizes vision-language models (VLMs), including [GPT-4o](https://platform.openai.com/docs/quickstart), [Claude 3.5 Sonnet](https://github.com/anthropics/anthropic-cookbook), [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224), and [Llama 3.2 11B](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct). You can experiment with various prompts provided in `prompt.md`.
 
-You can evaluate VLMs' robustness: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1H22Qtc5n7_QNnZbbRoqE0uZ65riuf_gY/view?usp=sharing)
+You can evaluate VLMs' robustness: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1H22Qtc5n7_QNnZbbRoqE0uZ65riuf_gY)
 
 Please contact: rmapzch@ucl.ac.uk if you have any questions.
 ![VLM](https://github.com/user-attachments/assets/65e2d944-31eb-4b3b-aa22-9874fac5205e)

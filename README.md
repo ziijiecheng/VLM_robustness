@@ -1,6 +1,4 @@
 # Understanding the robustness of vision-language models to medical image artefacts
-The project consists of two core components.
-
 1. Constructing benchmarks with various image artefacts. It allows you to apply intensity artefacts—including random noise, bias fields, and motion—to original, unaltered images. We implemented it using [torchio](https://github.com/TorchIO-project/torchio) as a reference. You can also apply spatial artefacts such as random cropping and rotation. The benchmark used in this study is avaliable at: [Benchmark](https://drive.google.com/drive/folders/1M7EldoSvxEMZ2jA9wJs52H1-4G2zTU8C?usp=sharing).
 
 You can apply medical image artefacts: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YA-B6Gfr_0SHMUparaUX9FL9p_BugTT6)

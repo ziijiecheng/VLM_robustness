@@ -10,6 +10,11 @@ You can evaluate VLMs' performance: [![Open in Colab](https://colab.research.goo
 Please contact: rmapzch@ucl.ac.uk if you have any questions.
 ![VLM](https://github.com/user-attachments/assets/65e2d944-31eb-4b3b-aa22-9874fac5205e)
 
+## 🔥 News
+
+> 📢 Our paper **"Understanding the robustness of vision-language models to medical image artefacts"**  
+> has been accepted to the **npj digital medicine**! 🎉 
+
 ## 🔑 Key Features
 
 - **Integrated Framework**: 1) Benchamrk construction 2) Application of VLMs in disease detection 3) Metrics for robustness evaluation

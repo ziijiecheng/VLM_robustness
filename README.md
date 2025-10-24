@@ -12,7 +12,7 @@ Please contact: rmapzch@ucl.ac.uk if you have any questions.
 
 ## 🔥 News
 
-> 📢 Our paper **"Understanding the robustness of vision-language models to medical image artefacts"**  
+> 📢 2025.10.22 Our paper **"Understanding the robustness of vision-language models to medical image artefacts"**  
 > has been accepted to the **npj digital medicine**! 🎉 
 
 ## 🔑 Key Features
